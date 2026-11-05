@@ -28,11 +28,7 @@ python3 -m http.server 8000
 
 ## Deploy
 
-GitHub Pages from `main`, root folder.
-
-## Known constraint
-
-The `GITHUB_TOKEN` available in the sandbox is read-only for this repository. `git push` and
-all write API calls (contents, refs, pulls) return 403 `Resource not accessible by integration`,
-even though the API reports `push: true`. Commits therefore have to be pushed by the user or by
-a credential with real write access.
+GitHub Pages from `main`, root folder. The site is live once Pages is enabled in
+**Settings → Pages** (source: *Deploy from a branch*, branch `main`, folder `/ (root)`),
+which publishes it at <https://aclacltradings-max.github.io/Portofolio/>. The canonical
+URL and Open Graph tags in `index.html` already point at that address.
